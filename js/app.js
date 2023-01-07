@@ -28,4 +28,11 @@ class App {
 			document.write(`${this.name} has been installed succesfully.`)
 		}
 	}
+
+	uninstallApp() {
+		if (this.installed === true) {
+			this.installed === false;
+			document.write(`${this.name} has been uninstalled succesfully.`)
+		}
+	}
 }
