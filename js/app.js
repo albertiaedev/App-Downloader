@@ -11,28 +11,32 @@ class App {
 	openApp() {
 		if (this.open === false) {
 			this.open === true;
-			document.write(`${this.name} has been opened succesfully.`)
+			let appOpen = document.write(`${this.name} has been opened succesfully.`);
+			return appOpen;
 		}
 	}
 
 	closeApp() {
 		if (this.open === true) {
 			this.open === false;
-			document.write(`${this.name} has been closed succesfully.`)
+			appClose = document.write(`${this.name} has been closed succesfully.`);
+			return appClose;
 		}
 	}
 
 	installApp() {
 		if (this.installed === false) {
 			this.installed === true;
-			document.write(`${this.name} has been installed succesfully.`)
+			appInstall = document.write(`${this.name} has been installed succesfully.`);
+			return appInstall;
 		}
 	}
 
 	uninstallApp() {
 		if (this.installed === true) {
 			this.installed === false;
-			document.write(`${this.name} has been uninstalled succesfully.`)
+			appUninstall = document.write(`${this.name} has been uninstalled succesfully.`);
+			return appUninstall;
 		}
 	}
 }
