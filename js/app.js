@@ -21,4 +21,11 @@ class App {
 			document.write(`${this.name} has been closed succesfully.`)
 		}
 	}
+
+	installApp() {
+		if (this.installed === false) {
+			this.installed === true;
+			document.write(`${this.name} has been installed succesfully.`)
+		}
+	}
 }
