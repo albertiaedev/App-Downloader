@@ -9,7 +9,7 @@ class App {
 	}
 
 	openApp() {
-		if (this.open === false) {
+		if (this.open === false && this.installed === true) {
 			this.open === true;
 			let appOpen = document.write(`${this.name} has been opened succesfully.`);
 			return appOpen;
@@ -17,7 +17,7 @@ class App {
 	}
 
 	closeApp() {
-		if (this.open === true) {
+		if (this.open === true && this.installed === true) {
 			this.open === false;
 			appClose = document.write(`${this.name} has been closed succesfully.`);
 			return appClose;
@@ -40,3 +40,10 @@ class App {
 		}
 	}
 }
+
+app = new App("WhatsApp", "+100M", "4,8 stars", "20MB");
+
+app.installApp();
+app.openApp();
+app.closeApp();
+app.uninstallApp();
